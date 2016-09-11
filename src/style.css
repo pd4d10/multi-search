@@ -1,0 +1,32 @@
+.link {
+  text-decoration: none;
+}
+
+.title {
+  color: #00c;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.url {
+  font-size: 14px;
+  color: #006621;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 2px 0 4px;
+}
+
+.title :global(em), .title :global(strong) {
+  font-weight: 400;
+  font-style: normal;
+  color: #c00;
+}
+
+.abstract {
+  margin: 0;
+  color: #545454;
+  font-size: 14px;
+  font-weight: 300;
+}
