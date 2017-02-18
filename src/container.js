@@ -31,26 +31,32 @@ const DataInput = connect(
   })
 )(Input)
 
-const List = ({ list }) => (
-  <GridTile
-    //key={tile.img}
-    //title="abc
-    //actionIcon={<IconButton><StarBorder color="white" /></IconButton>}
-    //actionPosition="left"
-    //titlePosition="top"
-    //titleBackground="linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%)"
-    //cols={1}
-    rows={1}
-    style={{
-      height: 'auto'
-    }}
-  >
-    {list.map(item => (
-      <Item {...item} />
-    ))}
-  </GridTile>
-)
+//const List = ({ list }) => (
+//  <GridTile
+//    //key={tile.img}
+//    //title="abc
+//    //actionIcon={<IconButton><StarBorder color="white" /></IconButton>}
+//    //actionPosition="left"
+//    //titlePosition="top"
+//    //titleBackground="linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%)"
+//    //cols={1}
+//    rows={1}
+//    style={{
+//      height: 'auto'
+//    }}
+//  >
+//    {list.map(item => (
+//      <Item {...item} />
+//    ))}
+//  </GridTile>
+//)
 
+const List = ({ list }) => (
+  <div dangerouslySetInnerHTML={{__html: `<iframe srcdoc="${list.html}" />`}}>
+    {/*<style dangerouslySetInnerHTML={{__html: list.style}}></style>
+    <div dangerouslySetInnerHTML={{__html: list.html}}></div>*/}
+  </div>
+)
 
 const Lists = ({ lists, isLoading }) => isLoading ? (
   <CircularProgress size={1} />

@@ -70,7 +70,7 @@ export const fetchData = keyword => dispatch => {
 
   return Promise.all(
     [
-      'https://www.google.com/search?q=',
+      // 'https://www.google.com/search?q=',
       'https://www.bing.com/search?q=',
       'https://www.baidu.com/s?wd=',
     ].map(
