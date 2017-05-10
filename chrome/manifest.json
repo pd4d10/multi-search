@@ -1,12 +1,12 @@
 {
   "manifest_version": 2,
-  "name": "Multi Search",
+  "name": "MultiSearch",
   "version": "0.1",
   "background": {
     "scripts": ["background.js"]
   },
   "omnibox": {
-    "keyword": "multi"
+    "keyword": "m"
   },
   "permissions": ["http://*/", "https://*/"],
   "browser_action": {},

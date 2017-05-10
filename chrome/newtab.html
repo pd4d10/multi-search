@@ -3,13 +3,17 @@
   <title>multi search</title>
   <style>
     body {
-      font-family: Helvetica, PingFang;
-      margin: 0 20px;
+      display: flex;
+    }
+    iframe {
+      flex-grow: 1;
     }
   </style>
 </head>
 <body>
-<div id="content"></div>
-<script src="dist/bundle.js"></script>
+<iframe id="google"></iframe>
+<iframe id="baidu"></iframe>
+<iframe id="bing"></iframe>
+<script src="newtab.js"></script>
 </body>
 </html>
